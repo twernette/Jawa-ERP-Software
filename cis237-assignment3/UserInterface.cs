@@ -73,7 +73,7 @@ namespace cis237_assignment3
         public string GetDroidMaterial()
         {
             Console.WriteLine("What would you like your droid to be made of?");
-            Console.WriteLine("(EX: Wood, Brick, Metal)");
+            Console.WriteLine("(EX: wood, brick, metal)");
             return Console.ReadLine();
         }
 

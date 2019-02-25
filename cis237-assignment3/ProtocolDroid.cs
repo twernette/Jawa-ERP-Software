@@ -29,9 +29,15 @@ namespace cis237_assignment3
         //**************
         //Methods
         //**************
+
+        public override string ToString()
+        {
+            return "Protocol Droid -" + Material + " , " + Color + " , " + "Number of languages: " + NumberOfLanguages.ToString() + " , " + TotalCost.ToString("C") + Environment.NewLine;
+        }
+
         public override void CalculateTotalCost()
         {
-            TotalCost = (adjustedBaseCost + PROTOCOL_PRICE + (numberOfLanguages * COST_PER_LANGUAGE));
+            TotalCost = (AdjustedBaseCost + PROTOCOL_PRICE + (numberOfLanguages * COST_PER_LANGUAGE));
         }
 
         //**************
@@ -41,6 +47,7 @@ namespace cis237_assignment3
         public ProtocolDroid(string material, string color, int languages) : base(material, color)
         {
             NumberOfLanguages = languages;
+            CalculateTotalCost();
         }
     }
 }

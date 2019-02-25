@@ -12,8 +12,6 @@ namespace cis237_assignment3
         Droid[] droidArray = new Droid[100];
 
 
-
-
         public void GetPrintString(UserInterface ui)
         {
             string outputString = "";

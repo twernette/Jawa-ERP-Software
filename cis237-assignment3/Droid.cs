@@ -16,7 +16,7 @@ namespace cis237_assignment3
         protected string color;
         protected decimal baseCost = 1000;
         private decimal totalCost;
-        protected decimal adjustedBaseCost;
+        private decimal adjustedBaseCost;
         protected decimal materialCost;
 
         //Yeah these probably aren't the type of materials that you'd see droids made out of, but work with me.
@@ -47,9 +47,20 @@ namespace cis237_assignment3
 
         }
 
+        public decimal AdjustedBaseCost
+        {
+            get { return adjustedBaseCost; }
+            set { adjustedBaseCost = value; }
+        }
+
+
         //**************
         //Methods
         //**************
+        public override string  ToString()
+        {
+            return "Droid -" + Material + " , " + Color + " , " + TotalCost.ToString("C") + Environment.NewLine;
+        }
 
         protected virtual void CalculateBaseCost()
         {
@@ -72,6 +83,7 @@ namespace cis237_assignment3
             { materialCost = BRICK; }
             if (material == "metal")
             { materialCost = METAL; }
+            CalculateBaseCost();
         }
     }
 }

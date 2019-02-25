@@ -45,19 +45,24 @@ namespace cis237_assignment3
 
         }
 
-
+        public decimal AdditionalFeatures
+        {
+            get { return additionalFeatures; }
+            set { additionalFeatures = value; }
+        }
         //**************
         //Methods
         //**************
         public override void CalculateTotalCost()
         {
-            TotalCost = (adjustedBaseCost + UTILITY_DROID + additionalFeatures);
+            TotalCost = (AdjustedBaseCost + UTILITY_DROID + AdditionalFeatures);
 
         }
 
         public override string ToString()
         {
-            return base.ToString() ;
+            return "Utility Droid -" + Material + " , " + Color + " , " + "Toolbox: " + Toolbox.ToString() + " , " + "Computer Connection: " + ComputerConnection.ToString()
+                    + " , " + "Arm: " + Arm.ToString() + " , " + TotalCost.ToString("C") + Environment.NewLine;
         }
 
         //**************
@@ -68,19 +73,19 @@ namespace cis237_assignment3
             if (toolbox)
             {
                 Toolbox = true;
-                additionalFeatures += TOOLBOX_COST;
+                AdditionalFeatures += TOOLBOX_COST;
             }
             if (computerConnection)
             {
                 ComputerConnection = true;
-                additionalFeatures += COMPUTER_CONNECTION_COST;
+                AdditionalFeatures += COMPUTER_CONNECTION_COST;
             }
             if (arm)
             {
                 Arm = true;
-                additionalFeatures += ARM_COST;
+                AdditionalFeatures += ARM_COST;
             }
-
+            CalculateTotalCost();
         }
     }
 }

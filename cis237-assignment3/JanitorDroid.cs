@@ -41,10 +41,15 @@ namespace cis237_assignment3
         //**************
         public override void CalculateTotalCost()
         {
-            TotalCost = (adjustedBaseCost + JANITOR_COST + additionalFeatures);
+            TotalCost = (AdjustedBaseCost + JANITOR_COST + AdditionalFeatures);
         }
 
-
+        public override string ToString()
+        {
+            return "Janitor Droid -" + Material + " , " + Color + " , " + "Toolbox: " + Toolbox.ToString() + " , " + "Computer Connection: " + ComputerConnection.ToString()
+                    + " , " + "Arm: " + Arm.ToString() + " , " + "Trash Compactor: " + TrashCompactor.ToString() + " , " + "Vacuum: " + Vacuum.ToString() +
+                    " , " + TotalCost.ToString("C") + Environment.NewLine;
+        }
         //**************
         //Constructor
         //**************
@@ -53,13 +58,14 @@ namespace cis237_assignment3
             if (trashCompactor)
             {
                 TrashCompactor = true;
-                additionalFeatures += TRASH_COST;
+                AdditionalFeatures += TRASH_COST;
             }
             if (vacuum)
             {
                 ComputerConnection = true;
-                additionalFeatures += VACUUM_COST;
+                AdditionalFeatures += VACUUM_COST;
             }
+            CalculateTotalCost();
         }
     }
 }

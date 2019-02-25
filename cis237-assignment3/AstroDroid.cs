@@ -40,10 +40,15 @@ namespace cis237_assignment3
         //**************
         public override void CalculateTotalCost()
         {
-            TotalCost = (adjustedBaseCost + ASTRO_COST + additionalFeatures);
+            TotalCost = (AdjustedBaseCost + ASTRO_COST + AdditionalFeatures);
         }
 
-
+        public override string ToString()
+        {
+            return "Astro Droid -" + Material + " , " + Color + " , " + "Toolbox: " + Toolbox.ToString() + " , " + "Computer Connection: " + ComputerConnection.ToString()
+                    + " , " + "Arm: " + Arm.ToString() + " , " + "Fire Extinquisher: " + FireExtinquisher.ToString() + " , " + "Number of Ships to Service: " + NumberShips.ToString() +
+                    " , " + TotalCost.ToString("C") + Environment.NewLine;
+        }
 
 
         //**************
@@ -54,13 +59,14 @@ namespace cis237_assignment3
             if (fireExtinquisher)
             {
                 FireExtinquisher = true;
-                additionalFeatures += FIRE_COST;
+                AdditionalFeatures += FIRE_COST;
             }
             if (numberShips != 0)
             {
                 NumberShips = numberShips;
-                additionalFeatures += (numberShips * COST_PER_SHIP);
+                AdditionalFeatures += (numberShips * COST_PER_SHIP);
             }
+            CalculateTotalCost();
         }
     }
 }
