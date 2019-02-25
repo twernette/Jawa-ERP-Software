@@ -8,6 +8,11 @@ namespace cis237_assignment3
 {
     class UserInterface
     {
+
+        //******************
+        //Methods
+        //******************
+
         //This method handles the user's decision from the options listed in the main menu.
         public int GetUserInput()
         {
@@ -61,6 +66,7 @@ namespace cis237_assignment3
             Output("");
         }
 
+        //Asks user to specify type of droid to add to inventory.
         public string GetDroidType()
         {
             Output("Which type of Droid would you like to add?");
@@ -68,6 +74,7 @@ namespace cis237_assignment3
             return Console.ReadLine();
         }
 
+        //Asks user to specify the type of material the droid is made out of.
         public string GetDroidMaterial()
         {
             Output("What would you like your droid to be made of?");
@@ -75,18 +82,21 @@ namespace cis237_assignment3
             return Console.ReadLine();
         }
 
+        //Asks user to specify what color the droid is.
         public string GetDroidColor()
         {
             Output("What color would you like your droid to be?");
             return Console.ReadLine();
         }
 
+        //Asks user for a integer value based off of two possible questions asked in the collection class.
         public int GetDroidInt(string outString)
         {
             Output(outString);
             return int.Parse(Console.ReadLine());
         }
 
+        //Asks user for a true/false response that is utilized for all additional features over every class of droid.
         public bool GetDroidBool(string outString)
         {
             Output(outString);

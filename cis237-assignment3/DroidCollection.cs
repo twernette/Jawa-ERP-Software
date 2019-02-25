@@ -12,6 +12,8 @@ namespace cis237_assignment3
         Droid[] droidArray = new Droid[100];
 
 
+
+        //GetPrintString is a simple loop that creates an output string with every droid in the array concat'd together.
         public void GetPrintString(UserInterface ui)
         {
             string outputString = "";
@@ -20,14 +22,16 @@ namespace cis237_assignment3
                 {
                     if (droid != null)
                     {
-                        outputString += droid.ToString() +
-                            Environment.NewLine;
+                        outputString += droid.ToString();
                     }
                 }
             }
             ui.Output(outputString);
         }
 
+
+        //AddNewDroid initiates a loop that finds the first available slot in the DroidArray and asks user to specify type of droid they wish to create. Once
+        //a new droid type is specified, many follow up questions are asked to see what features each new droid in inventory will have.
         public void AddNewDroid(UserInterface ui)
         {
             int i = 0;
