@@ -2,7 +2,7 @@
 
 ## Due: 02-25-2019
 
-## Author
+## Author - Tyler Wernette
 
 
 
@@ -129,8 +129,8 @@ It may be beneficial for you to create extra methods within the droid sub classe
 | README                     | 5      |
 | **Total**                  | **100**|
 
-## Outside Resources Used
+## Outside Resources Used - https://www.youtube.com/watch?v=ZzVxgJmLAsE for some additional info on Poly/inheritance that I missed out on in class.
 
 
 
-## Known Problems, Issues, And/Or Errors in the Program
+## Known Problems, Issues, And/Or Errors in the Program - None that I'm aware of.
