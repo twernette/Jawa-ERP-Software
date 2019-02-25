@@ -22,14 +22,14 @@ namespace cis237_assignment3
         //**************
         //Properties
         //**************
-        public bool TrashCompactor
+        private bool TrashCompactor
         {
             get { return trashCompactor; }
             set { trashCompactor = value; }
 
         }
 
-        public bool Vacuum
+        private bool Vacuum
         {
             get { return vacuum; }
             set { vacuum = value; }

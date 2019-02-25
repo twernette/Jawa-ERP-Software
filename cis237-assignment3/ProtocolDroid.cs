@@ -20,7 +20,7 @@ namespace cis237_assignment3
         //Properties
         //**************
 
-        public decimal NumberOfLanguages
+        protected decimal NumberOfLanguages
         {
             get { return numberOfLanguages; }
             set { numberOfLanguages = value; }

@@ -12,12 +12,12 @@ namespace cis237_assignment3
         //**************
         //Variables
         //**************
-        protected string material;
-        protected string color;
-        protected decimal baseCost = 1000;
+        private string material;
+        private string color;
+        private decimal baseCost = 1000;
         private decimal totalCost;
         private decimal adjustedBaseCost;
-        protected decimal materialCost;
+        private decimal materialCost;
 
         //Yeah these probably aren't the type of materials that you'd see droids made out of, but work with me.
         const decimal WOOD = 1;
@@ -33,21 +33,21 @@ namespace cis237_assignment3
             set { totalCost = value; }
         }
 
-        public string Material
+        protected string Material
         {
             get { return material; }
             set { material = value; }
 
         }
 
-        public string Color
+        protected string Color
         {
             get { return color; }
             set { color = value; }
 
         }
 
-        public decimal AdjustedBaseCost
+        protected decimal AdjustedBaseCost
         {
             get { return adjustedBaseCost; }
             set { adjustedBaseCost = value; }

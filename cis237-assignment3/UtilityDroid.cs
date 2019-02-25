@@ -14,7 +14,7 @@ namespace cis237_assignment3
         private bool toolBox;
         private bool computerConnection;
         private bool arm;
-        protected decimal additionalFeatures=0;
+        private decimal additionalFeatures=0;
 
         const decimal UTILITY_DROID = 1000;
         const decimal TOOLBOX_COST = 150;
@@ -24,32 +24,33 @@ namespace cis237_assignment3
         //**************
         //Properties
         //**************
-        public bool Toolbox
+        protected bool Toolbox
         {
             get { return toolBox; }
             set { toolBox = value; }
 
         }
 
-        public bool ComputerConnection
+        protected bool ComputerConnection
         {
             get { return computerConnection; }
             set { computerConnection = value; }
 
         }
 
-        public bool Arm
+        protected bool Arm
         {
             get { return arm; }
             set { arm = value; }
 
         }
 
-        public decimal AdditionalFeatures
+        protected decimal AdditionalFeatures
         {
             get { return additionalFeatures; }
             set { additionalFeatures = value; }
         }
+
         //**************
         //Methods
         //**************

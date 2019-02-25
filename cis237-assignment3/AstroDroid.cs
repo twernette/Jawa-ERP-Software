@@ -21,14 +21,14 @@ namespace cis237_assignment3
         //**************
         //Properties
         //**************
-        public bool FireExtinquisher
+        private bool FireExtinquisher
         {
             get { return fireExtinquisher; }
             set { fireExtinquisher = value; }
 
         }
 
-        public int NumberShips
+        private int NumberShips
         {
             get { return numberShips; }
             set { numberShips = value; }
