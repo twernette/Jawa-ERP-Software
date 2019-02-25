@@ -22,13 +22,13 @@ namespace cis237_assignment3
                 {
                     case 1:
                         {
-                            collection.GetPrintString(ui);
+                            collection.AddNewDroid(ui);
                             choice = ui.GetUserInput();
                             break;
                         }
                     case 2:
                         {
-
+                            collection.GetPrintString(ui);
                             choice = ui.GetUserInput();
                             break;
                         }

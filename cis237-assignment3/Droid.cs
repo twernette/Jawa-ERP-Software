@@ -9,31 +9,53 @@ namespace cis237_assignment3
     public abstract class Droid : IDroid
     {
 
-
         //**************
         //Variables
         //**************
-        private string material;
-        private string color;
-        private decimal baseCost = 1000;
+        protected string material;
+        protected string color;
+        protected decimal baseCost = 1000;
         private decimal totalCost;
-        private decimal adjustedBaseCost;
-        public decimal TotalCost { get; set; }
+        protected decimal adjustedBaseCost;
+        protected decimal materialCost;
 
-        const decimal wood = 1;
-        const decimal brick = 2;
-        const decimal metal = 3;
+        //Yeah these probably aren't the type of materials that you'd see droids made out of, but work with me.
+        const decimal WOOD = 1;
+        const decimal BRICK = 2;
+        const decimal METAL = 3;
 
+        //**************
+        //Properties
+        //**************
+        public decimal TotalCost
+        {
+            get { return totalCost; }
+            set { totalCost = value; }
+        }
+
+        public string Material
+        {
+            get { return material; }
+            set { material = value; }
+
+        }
+
+        public string Color
+        {
+            get { return color; }
+            set { color = value; }
+
+        }
 
         //**************
         //Methods
         //**************
 
-        public virtual void CalculateBaseCost()
+        protected virtual void CalculateBaseCost()
         {
-            
-
+            adjustedBaseCost = (baseCost * materialCost);
         }
+
         public abstract void CalculateTotalCost();
 
         //**************
@@ -44,6 +66,12 @@ namespace cis237_assignment3
 
             this.material = material;
             this.color = color;
+            if (material == "wood")
+            { materialCost = WOOD; }
+            if (material == "brick")
+            { materialCost = BRICK; }
+            if (material == "metal")
+            { materialCost = METAL; }
         }
     }
 }

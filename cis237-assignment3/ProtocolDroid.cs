@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cis237_assignment3
 {
-    class ProtocolDroid
+    class ProtocolDroid : Droid
     {
 
         //**************
@@ -14,9 +14,33 @@ namespace cis237_assignment3
         //**************
         private decimal numberOfLanguages;
         const decimal COST_PER_LANGUAGE = 200;
-        public decimal TotalCost { get; set; }
+        const decimal PROTOCOL_PRICE = 1500;
 
-        public void CalculateTotalCost()
-        { }
+        //**************
+        //Properties
+        //**************
+
+        public decimal NumberOfLanguages
+        {
+            get { return numberOfLanguages; }
+            set { numberOfLanguages = value; }
+
+        }
+        //**************
+        //Methods
+        //**************
+        public override void CalculateTotalCost()
+        {
+            TotalCost = (adjustedBaseCost + PROTOCOL_PRICE + (numberOfLanguages * COST_PER_LANGUAGE));
+        }
+
+        //**************
+        //Constructor
+        //**************
+
+        public ProtocolDroid(string material, string color, int languages) : base(material, color)
+        {
+            NumberOfLanguages = languages;
+        }
     }
 }
