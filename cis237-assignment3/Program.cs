@@ -16,7 +16,7 @@ namespace cis237_assignment3
 
             int choice = ui.GetUserInput();
 
-            while (choice != 5)
+            while (choice != 3)
             {
                 switch (choice)
                 {
@@ -29,18 +29,6 @@ namespace cis237_assignment3
                     case 2:
                         {
                             collection.GetPrintString(ui);
-                            choice = ui.GetUserInput();
-                            break;
-                        }
-                    case 3:
-                        {
-
-                            choice = ui.GetUserInput();
-                            break;
-                        }
-                    case 4:
-                        {
-
                             choice = ui.GetUserInput();
                             break;
                         }

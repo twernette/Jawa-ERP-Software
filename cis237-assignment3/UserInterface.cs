@@ -20,7 +20,7 @@ namespace cis237_assignment3
 
 
             // While the input is not valid re-get the input
-            while (caseSwitch != 1 && caseSwitch != 2 && caseSwitch != 3 && caseSwitch != 4 && caseSwitch != 5)
+            while (caseSwitch != 1 && caseSwitch != 2 && caseSwitch != 3)
             {
                 // Print error message
                 this.PrintErrorMessage();
@@ -34,7 +34,7 @@ namespace cis237_assignment3
 
 
             // At this point I know the input is a valid number
-            // of either a 1/2/3/4.
+            // of either a 1/2.
             return caseSwitch;
         }
 
