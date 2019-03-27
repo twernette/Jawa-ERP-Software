@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace cis237_assignment3
+namespace Jawa_ERP_Software
 {
     interface IDroid
     {

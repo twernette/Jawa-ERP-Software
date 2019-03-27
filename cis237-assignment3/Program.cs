@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace cis237_assignment3
+namespace Jawa_ERP_Software
 {
     class Program
     {
@@ -16,7 +16,7 @@ namespace cis237_assignment3
 
             int choice = ui.GetUserInput();
 
-            while (choice != 3)
+            while (choice != 5)
             {
                 switch (choice)
                 {
@@ -29,6 +29,18 @@ namespace cis237_assignment3
                     case 2:
                         {
                             collection.GetPrintString(ui);
+                            choice = ui.GetUserInput();
+                            break;
+                        }
+                    case 3:
+                        {
+                            collection.AddManyDroids();
+                            choice = ui.GetUserInput();
+                            break;
+                        }
+                    case 4:
+                        {
+                            collection.ModifiedBucketSort();
                             choice = ui.GetUserInput();
                             break;
                         }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace cis237_assignment3
+namespace Jawa_ERP_Software
 {
     class UtilityDroid : Droid
     {
@@ -62,8 +62,8 @@ namespace cis237_assignment3
 
         public override string ToString()
         {
-            return "Utility Droid -" + Material + " , " + Color + " , " + "Toolbox: " + Toolbox.ToString() + " , " + "Computer Connection: " + ComputerConnection.ToString()
-                    + " , " + "Arm: " + Arm.ToString() + " , " + TotalCost.ToString("C") + Environment.NewLine;
+            return "***********************" + Environment.NewLine +"Utility Droid" + Environment.NewLine + Material + Environment.NewLine + Color + Environment.NewLine + "Toolbox: " + Toolbox.ToString() + Environment.NewLine + "Computer Connection: " + ComputerConnection.ToString()
+                    + Environment.NewLine + "Arm: " + Arm.ToString() + Environment.NewLine + TotalCost.ToString("C") + Environment.NewLine + "***********************" + Environment.NewLine;
         }
 
         //**************

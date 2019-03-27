@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace cis237_assignment3
+namespace Jawa_ERP_Software
 {
     class UserInterface
     {
@@ -25,7 +25,7 @@ namespace cis237_assignment3
 
 
             // While the input is not valid re-get the input
-            while (caseSwitch != 1 && caseSwitch != 2 && caseSwitch != 3)
+            while (caseSwitch != 1 && caseSwitch != 2 && caseSwitch != 3 && caseSwitch != 4 && caseSwitch != 5)
             {
                 // Print error message
                 this.PrintErrorMessage();
@@ -55,7 +55,9 @@ namespace cis237_assignment3
             Output("What would you like to do?");
             Output("1. Add a New Droid");
             Output("2. Print List of Droids");
-            Output("3. Exit");
+            Output("3. Add Generic Droids to List *TEST*");
+            Output("4. Sort Droid List by Model");
+            Output("5. Exit");
         }
 
         //Error message when decision for main menu is invalid.

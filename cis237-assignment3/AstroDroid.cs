@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace cis237_assignment3
+namespace Jawa_ERP_Software
 {
     class AstroDroid : UtilityDroid
     {
@@ -45,9 +45,9 @@ namespace cis237_assignment3
 
         public override string ToString()
         {
-            return "Astro Droid -" + Material + " , " + Color + " , " + "Toolbox: " + Toolbox.ToString() + " , " + "Computer Connection: " + ComputerConnection.ToString()
-                    + " , " + "Arm: " + Arm.ToString() + " , " + "Fire Extinquisher: " + FireExtinquisher.ToString() + " , " + "Number of Ships to Service: " + NumberShips.ToString() +
-                    " , " + TotalCost.ToString("C") + Environment.NewLine;
+            return "***********************" + Environment.NewLine + "Astro Droid " + Environment.NewLine + Material + Environment.NewLine + Color + Environment.NewLine + "Toolbox: " + Toolbox.ToString() + Environment.NewLine + "Computer Connection: " + ComputerConnection.ToString()
+                    + Environment.NewLine + "Arm: " + Arm.ToString() + Environment.NewLine + "Fire Extinquisher: " + FireExtinquisher.ToString() + Environment.NewLine + "Number of Ships to Service: " + NumberShips.ToString() +
+                    Environment.NewLine + TotalCost.ToString("C") + Environment.NewLine +"***********************" + Environment.NewLine;
         }
 
 

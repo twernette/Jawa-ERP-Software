@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace cis237_assignment3
+namespace Jawa_ERP_Software
 {
     public abstract class Droid : IDroid
     {
@@ -19,7 +19,7 @@ namespace cis237_assignment3
         private decimal adjustedBaseCost;
         private decimal materialCost;
 
-        //Yeah these probably aren't the type of materials that you'd see droids made out of, but work with me.
+        //Not quite the standard materials used to construct droids. Awaiting a repsonse from the Jawas on what these should be renamed to.
         const decimal WOOD = 1;
         const decimal BRICK = 2;
         const decimal METAL = 3;
@@ -59,7 +59,7 @@ namespace cis237_assignment3
         //**************
         public override string  ToString()
         {
-            return "Droid -" + Material + " , " + Color + " , " + TotalCost.ToString("C") + Environment.NewLine;
+            return "Droid -" + Material + Environment.NewLine + Color + Environment.NewLine + TotalCost.ToString("C") + Environment.NewLine;
         }
 
         protected virtual void CalculateBaseCost()

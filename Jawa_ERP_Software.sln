@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cis237-assignment3", "cis237-assignment3\cis237-assignment3.csproj", "{28BD4AB1-9CD7-4843-AEFD-0BC6C70C44EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jawa_ERP_Software", "cis237-assignment3\Jawa_ERP_Software.csproj", "{28BD4AB1-9CD7-4843-AEFD-0BC6C70C44EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

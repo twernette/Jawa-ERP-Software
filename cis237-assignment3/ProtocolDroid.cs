@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace cis237_assignment3
+namespace Jawa_ERP_Software
 {
     class ProtocolDroid : Droid
     {
@@ -32,7 +32,8 @@ namespace cis237_assignment3
 
         public override string ToString()
         {
-            return "Protocol Droid -" + Material + " , " + Color + " , " + "Number of languages: " + NumberOfLanguages.ToString() + " , " + TotalCost.ToString("C") + Environment.NewLine;
+            return "***********************" + Environment.NewLine + "Protocol Droid" + Environment.NewLine + Material + Environment.NewLine + Color + Environment.NewLine + "Number of languages: " 
+                + NumberOfLanguages.ToString() + Environment.NewLine + TotalCost.ToString("C") + Environment.NewLine + "***********************" + Environment.NewLine;
         }
 
         public override void CalculateTotalCost()
